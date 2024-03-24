@@ -16,11 +16,11 @@ class Back_creator:
     dict_coords = {0: [pkt_begin[0], pkt_begin[1]]}
     current_elem_y = 1
     dwg = ''
-    filename = 'default.svg'
+    filename = 'new_dir/default.svg'
     def set_filename(self,text):
         self.filename=text
     def generate_coords(self):
-        for i in range(1, 32):
+        for i in range(1, 256):
             self.dict_coords[i] = [self.current_elem * self.shift[0] + self.dict_coords[0][0],
                                    self.current_elem_y * self.shift[1] + self.dict_coords[0][1]]
             self.current_elem += 1
@@ -35,7 +35,6 @@ class Back_creator:
 
     def create_back(self):
         gradient = svgwrite.gradients.LinearGradient(id="grad", start=(0, 0), end=(1, 1))
-        # gradient.add_stop_color(offset='0%', color='red')
         gradient.add_stop_color(offset='0%', color='red')
         gradient.add_stop_color(offset='100%', color='yellow')
         self.dwg.defs.add(gradient)
@@ -48,7 +47,8 @@ class Back_creator:
 
     def cell_placer(self):
         for i in range(1, 32):
-            cell = class_cell.Cell(self.dict_coords[i][0], self.dict_coords[i][1], self.dwg, str(i),
+            print(f"DICT:{i+self.current_place_x}")
+            cell = class_cell.Cell(self.dict_coords[i+1][0], self.dict_coords[i+1][1], self.dwg, str(i),
                                    (self.width, self.heigth))
             cell.rozm_count()
             cell.plase()
@@ -56,17 +56,13 @@ class Back_creator:
     def place_notes_lines(self):
         for i in range(1, 32, 7):
             print(f"{(self.dict_coords[i][0], self.dict_coords[i][1])}")
-            self.dwg.add(self.dwg.line((self.dict_coords[i][0] + 100, self.dict_coords[i][1]),
-                                       (self.dict_coords[i][0] + 300, self.dict_coords[i][1]),
+            self.dwg.add(self.dwg.line((self.width/2 + 20, self.dict_coords[i][1]),
+                                       (self.width/2 + 150, self.dict_coords[i][1]),
                                        stroke=svgwrite.rgb(0, 0, 0), stroke_width="1"))
     def place_text_label(self,text):
         self.dwg.add(self.dwg.text(text,insert=(self.width//2-len(text)*10,30)))
-    def cell_generator(self, arr='none'):
+    '''def cell_generator(self, arr='none'):
         arr = arr.strip()
-
-        # if(len(arr)<2):
-        #    arr=" "+arr
-        # print(arr)
         begin_point_x, begin_point_y = self.pkt_begin[0], self.pkt_begin[1]
         x_point = begin_point_x + self.current_place_x  # * self.shift[0]
         y_point = begin_point_y + self.current_place_y  # * self.shift[1]
@@ -87,25 +83,29 @@ class Back_creator:
             self.current_elem = 1
             self.current_place_y += self.shift[1]
             self.current_place_x = begin_point_x
-        self.current_place_x += self.shift[0]
+        self.current_place_x += self.shift[0]'''
 
     def save_calendar(self):
         self.dwg.save()
 
     def preprocess(self, arr):
         pattern = r'\s\w'
-        self.current_place_x = self.current_elem = 7 - len(re.findall(pattern, arr[0]))
+        #self.current_place_x = self.current_elem = 7 - len(re.findall(pattern, arr[0]))
+        self.current_place_x = self.current_elem = 7- len(re.findall(pattern, arr[2]))
+        print(self.current_place_x)
 
-    def process(self, arr):
-        pattern = r'\s\w'
+    '''
+        def process(self, arr):
+        pattern = r"\s\w"
         for i in range(len(arr)):
-            self.current_place_x = self.current_elem = 7 - len(re.findall(pattern, arr[i]))
+            #self.current_place_x = self.current_elem = 7 - len(re.findall(pattern, arr[i]))
+            self.current_place_x = self.current_elem = 8 - len(re.findall(pattern, arr[2]))
             new_arr = arr[i].split(" ")
 
             for ii in new_arr:
                 if (ii == ''):
                     continue
-                self.cell_generator(ii)
+                self.cell_generator(ii)'''
 
 '''
 calendar_svg = Back_creator()
