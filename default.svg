@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="250" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="red"/>
+            <stop offset="100%" stop-color="yellow"/>
+        </linearGradient>
+    </defs>
+    <rect fill="url(#grad)" height="250" stroke="none" width="500" x="0" y="0"/>
+    <text x="150" y="70">1</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="146" y="55"/>
+    <text x="176" y="70">2</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="172" y="55"/>
+    <text x="202" y="70">3</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="198" y="55"/>
+    <text x="46" y="90">4</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="42" y="75"/>
+    <text x="72" y="90">5</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="68" y="75"/>
+    <text x="98" y="90">6</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="94" y="75"/>
+    <text x="124" y="90">7</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="120" y="75"/>
+    <text x="150" y="90">8</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="146" y="75"/>
+    <text x="176" y="90">9</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="172" y="75"/>
+    <text x="202" y="90">10</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="198" y="75"/>
+    <text x="46" y="110">11</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="42" y="95"/>
+    <text x="72" y="110">12</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="68" y="95"/>
+    <text x="98" y="110">13</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="94" y="95"/>
+    <text x="124" y="110">14</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="120" y="95"/>
+    <text x="150" y="110">15</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="146" y="95"/>
+    <text x="176" y="110">16</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="172" y="95"/>
+    <text x="202" y="110">17</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="198" y="95"/>
+    <text x="46" y="130">18</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="42" y="115"/>
+    <text x="72" y="130">19</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="68" y="115"/>
+    <text x="98" y="130">20</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="94" y="115"/>
+    <text x="124" y="130">21</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="120" y="115"/>
+    <text x="150" y="130">22</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="146" y="115"/>
+    <text x="176" y="130">23</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="172" y="115"/>
+    <text x="202" y="130">24</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="198" y="115"/>
+    <text x="46" y="150">25</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="42" y="135"/>
+    <text x="72" y="150">26</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="68" y="135"/>
+    <text x="98" y="150">27</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="94" y="135"/>
+    <text x="124" y="150">28</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="120" y="135"/>
+    <text x="150" y="150">29</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="146" y="135"/>
+    <text x="176" y="150">30</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="172" y="135"/>
+    <text x="202" y="150">31</text>
+    <rect fill="none" height="20" stroke="black" stroke-width="1" width="26" x="198" y="135"/>
+    <line stroke="rgb(0,0,0)" stroke-width="1" x1="250" x2="450" y1="70" y2="70"/>
+    <line stroke="rgb(0,0,0)" stroke-width="1" x1="250" x2="450" y1="90" y2="90"/>
+    <line stroke="rgb(0,0,0)" stroke-width="1" x1="250" x2="450" y1="110" y2="110"/>
+    <line stroke="rgb(0,0,0)" stroke-width="1" x1="250" x2="450" y1="130" y2="130"/>
+    <line stroke="rgb(0,0,0)" stroke-width="1" x1="250" x2="450" y1="150" y2="150"/>
+    <text x="150" y="30">March 2024</text>
+</svg>
