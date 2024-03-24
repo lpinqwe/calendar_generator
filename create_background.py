@@ -17,7 +17,8 @@ class Back_creator:
     current_elem_y = 1
     dwg = ''
     filename = 'default.svg'
-
+    def set_filename(self,text):
+        self.filename=text
     def generate_coords(self):
         for i in range(1, 32):
             self.dict_coords[i] = [self.current_elem * self.shift[0] + self.dict_coords[0][0],
@@ -28,8 +29,8 @@ class Back_creator:
                 self.current_elem_y += 1
         print(self.dict_coords)
 
-    def __init__(self):
-        self.dwg = svg.Drawing(width=self.width, height=self.heigth, filename=self.filename,
+    def __init__(self,filename=filename):
+        self.dwg = svg.Drawing(width=self.width, height=self.heigth, filename=filename,
                                size=(self.width, self.heigth))
 
     def create_back(self):
